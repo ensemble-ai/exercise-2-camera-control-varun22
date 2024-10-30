@@ -6,7 +6,7 @@ extends CameraControllerBase
 @export var box_height:float = 10.0
 
 
-func _ready() -> void:
+func _ready() -> void: 
 	super()
 	position = target.position
 	
