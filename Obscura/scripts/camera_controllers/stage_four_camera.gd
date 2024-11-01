@@ -1,24 +1,34 @@
-class_name stage_one_camera
+class_name stage_four_camera
 extends CameraControllerBase
 
+@export var lead_speed: float = 20.0
+@export var catchup_delay_duration: float = 0.2
+@export var catchup_speed: float = 5.0
+@export var leash_distance: float = 5.0
+
 func _ready() -> void:
-	position += Vector3(0.0, dist_above_target, 0.0)
+	position = target.global_position
 	super()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !current:
 		return
+
+	if target.velocity.length() > 0.01:
+		var target_position = target.global_position + (target.velocity.normalized() * leash_distance)
 	
-	position.x = target.global_position.x
-	position.z = target.global_position.z
-	
+		if target.velocity.length() > 50:
+			position = position.lerp(target_position, 40.0 * delta)
+		else:
+			position = position.lerp(target_position, lead_speed * delta)
+	else:
+		position = position.lerp(target.global_position, catchup_speed * delta)
+		
 	if draw_camera_logic:
 		draw_logic()
-	
+		
 	super(delta)
-
-
+	
 func draw_logic() -> void:
 	var mesh_instance := MeshInstance3D.new()
 	var immediate_mesh := ImmediateMesh.new()
@@ -40,7 +50,7 @@ func draw_logic() -> void:
 	
 	add_child(mesh_instance)
 	mesh_instance.global_transform = Transform3D.IDENTITY
-	mesh_instance.global_position = Vector3(target.global_position.x, target.global_position.y, target.global_position.z)
+	mesh_instance.global_position = Vector3(global_position.x, target.global_position.y, global_position.z)
 	
 	await get_tree().process_frame
 	mesh_instance.queue_free()
