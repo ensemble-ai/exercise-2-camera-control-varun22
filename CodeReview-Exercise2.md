@@ -1,6 +1,6 @@
-# Peer-Review for Programming Exercise 2 #
+# Peer-Review for Programming Exercise 2
 
-## Description ##
+## Description
 
 For this assignment, you will be giving feedback on the completeness of assignment two: Obscura. To do so, we will give you a rubric to provide feedback. Please give positive criticism and suggestions on how to fix segments of code.
 
@@ -8,62 +8,54 @@ You only need to review code modified or created by the student you are reviewin
 
 Abusive or hateful language or comments will not be tolerated and will result in a grade penalty or be considered a breach of the UC Davis Code of Academic Conduct.
 
-If there are any questions at any point, please email the TA.   
+If there are any questions at any point, please email the TA.
 
 ## Due Date and Submission Information
+
 See the official course schedule for due date.
 
 A successful submission should consist of a copy of this markdown document template that is modified with your peer review. This review document should be placed into the base folder of the repo you are reviewing in the master branch. The file name should be the same as in the template: `CodeReview-Exercise2.md`. You must also include your name and email address in the `Peer-reviewer Information` section below.
 
-If you are in a rare situation where two peer-reviewers are on a single repository, append your UC Davis user name before the extension of your review file. An example: `CodeReview-Exercise2-username.md`. Both reviewers should submit their reviews in the master branch.  
+If you are in a rare situation where two peer-reviewers are on a single repository, append your UC Davis user name before the extension of your review file. An example: `CodeReview-Exercise2-username.md`. Both reviewers should submit their reviews in the master branch.
 
-# Solution Assessment #
+# Solution Assessment
 
 ## Peer-reviewer Information
 
-* *name:* Siwei Tan
-* *email:* siwtan@ucdavis.edu
+- _name:_ Siwei Tan
+- _email:_ siwtan@ucdavis.edu
 
-### Description ###
+### Description
 
 For assessing the solution, you will be choosing ONE choice from: unsatisfactory, satisfactory, good, great, or perfect.
 
 The break down of each of these labels for the solution assessment.
 
-#### Perfect #### 
+#### Perfect
+
     Can't find any flaws with the prompt. Perfectly satisfied all stage objectives.
 
-#### Great ####
-    Minor flaws in one or two objectives. 
+#### Great
 
-#### Good #####
+    Minor flaws in one or two objectives.
+
+#### Good
+
     Major flaw and some minor flaws.
 
-#### Satisfactory ####
+#### Satisfactory
+
     Couple of major flaws. Heading towards solution, however did not fully realize solution.
 
-#### Unsatisfactory ####
+#### Unsatisfactory
+
     Partial work, not converging to a solution. Pervasive Major flaws. Objective largely unmet.
 
+---
 
-___
+## Solution Assessment
 
-## Solution Assessment ##
-
-### Stage 1 ###
-
-- [x] Perfect
-- [ ] Great
-- [ ] Good
-- [ ] Satisfactory
-- [ ] Unsatisfactory
-
-___
-#### Justification ##### 
-Write Justification here.
-
-___
-### Stage 2 ###
+### Stage 1
 
 - [x] Perfect
 - [ ] Great
@@ -71,12 +63,29 @@ ___
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
-___
-#### Justification ##### 
-Write Justification here.
+---
 
-___
-### Stage 3 ###
+#### Justification
+
+stage 1 is perfect. The code is well written and the camera is right stick on the crosshair. Nice job!
+
+---
+
+### Stage 2
+
+- [x] Perfect
+- [ ] Great
+- [ ] Good
+- [ ] Satisfactory
+- [ ] Unsatisfactory
+
+---
+
+#### Justification
+
+## stage 2 is perfect. autoscroll_speed is implemented correctly and the camera is correctly push by the box edge.
+
+### Stage 3
 
 - [ ] Perfect
 - [x] Great
@@ -84,12 +93,15 @@ ___
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
-___
-#### Justification ##### 
+---
+
+#### Justification
+
 Write Justification here.
 
-___
-### Stage 4 ###
+---
+
+### Stage 4
 
 - [ ] Perfect
 - [x] Great
@@ -97,12 +109,15 @@ ___
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
-___
-#### Justification ##### 
+---
+
+#### Justification
+
 Write Justification here.
 
-___
-### Stage 5 ###
+---
+
+### Stage 5
 
 - [x] Perfect
 - [ ] Great
@@ -110,45 +125,48 @@ ___
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
-___
-#### Justification ##### 
+---
+
+#### Justification
+
 Write Justification here.
-___
-# Code Style #
 
+---
 
-### Description ###
+# Code Style
+
+### Description
+
 Check the scripts to see if the student code adheres to the GDScript style guide.
 
 If sections do not adhere to the style guide, please peramlink the line of code from Github and justify why the line of code has not followed the style guide.
 
 It should look something like this:
 
-* [description of infraction](https://github.com/dr-jam/ECS189L) - this is the justification.
+- [description of infraction](https://github.com/dr-jam/ECS189L) - this is the justification.
 
 Please refer to the first code review template on how to do a permalink.
 
+#### Style Guide Infractions
 
-#### Style Guide Infractions ####
+#### Style Guide Exemplars
 
-#### Style Guide Exemplars ####
+---
 
-___
-#### Put style guide infractures ####
+#### Put style guide infractures
 
-___
+---
 
-# Best Practices #
+# Best Practices
 
-### Description ###
+### Description
 
-If the student has followed best practices then feel free to point at these code segments as examplars. 
+If the student has followed best practices then feel free to point at these code segments as examplars.
 
 If the student has breached the best practices and has done something that should be noted, please add the infraction.
 
-
 This should be similar to the Code Style justification.
 
-#### Best Practices Infractions ####
+#### Best Practices Infractions
 
-#### Best Practices Exemplars ####
+#### Best Practices Exemplars
