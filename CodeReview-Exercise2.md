@@ -63,8 +63,6 @@ The break down of each of these labels for the solution assessment.
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
----
-
 #### Justification
 
 stage 1 is perfect. The code is well written and the camera is right stick on the crosshair. Nice job!
@@ -73,17 +71,19 @@ stage 1 is perfect. The code is well written and the camera is right stick on th
 
 ### Stage 2
 
-- [x] Perfect
-- [ ] Great
+- [ ] Perfect
+- [x] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
----
-
 #### Justification
 
-## stage 2 is perfect. autoscroll_speed is implemented correctly and the camera is correctly push by the box edge.
+Stage 2 is almost perfect. autoscroll_speed is implemented correctly and the camera is correctly push by the box edge.
+
+One small flaws on the logics is that when checking the edge of the boarderbox, you used the central postion of the vessl' sprite instead of carefully useing the left/right/up/down edge of that circle sprite. this causes that the sprite of that vessel is not strictly inside the auto-scroll box.
+
+---
 
 ### Stage 3
 
@@ -93,11 +93,11 @@ stage 1 is perfect. The code is well written and the camera is right stick on th
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
----
-
 #### Justification
 
-Write Justification here.
+Nice following machamism for the camera.
+
+One flaw is that when sprite at the edge of then leash distance, the sprite of that vessel is shaking, which is not good for the game experience.
 
 ---
 
@@ -109,11 +109,9 @@ Write Justification here.
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
----
-
 #### Justification
 
-Write Justification here.
+Same flas as stage 3, the sprite of the vessel is shaking when it is at the edge of the leash distance.
 
 ---
 
@@ -124,8 +122,6 @@ Write Justification here.
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
-
----
 
 #### Justification
 
@@ -168,5 +164,7 @@ If the student has breached the best practices and has done something that shoul
 This should be similar to the Code Style justification.
 
 #### Best Practices Infractions
+
+For stage 3, I think you can add a small buffer to the leash distance to avoid this OR not changing the speed of the camera but only the position of the camera.
 
 #### Best Practices Exemplars
