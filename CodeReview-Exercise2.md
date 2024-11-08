@@ -111,21 +111,25 @@ One flaw is that when sprite at the edge of then leash distance, the sprite of t
 
 #### Justification
 
-Same flas as stage 3, the sprite of the vessel is shaking when it is at the edge of the leash distance.
+Similiar flaws as stage 3, the sprite of the vessel is shaking when it is at the edge of the leash distance.
+
+Also since the sprite is shacking, the camera is not exactly leading the vessel when vessel is boosting.
 
 ---
 
 ### Stage 5
 
-- [x] Perfect
-- [ ] Great
+- [ ] Perfect
+- [x] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justification
 
-Write Justification here.
+Similiar to your stage 2, sprite is shaking on the edge of the outer-box is not strictly correct. also the vessel is not strictly inside the outer-box when pushing.
+
+Another flaw is that F key (draw/hide camera lines button)is not working for double push box.
 
 ---
 
@@ -144,8 +148,11 @@ It should look something like this:
 Please refer to the first code review template on how to do a permalink.
 
 #### Style Guide Infractions
+[Declare local vars without specify the type](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_two_camera.gd#L8) - The local variable `top_edge` is not declared with a type.
 
 #### Style Guide Exemplars
+
+- [goodjob on initializing exported values](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_five_camera.gd#L6)
 
 ---
 
@@ -165,6 +172,10 @@ This should be similar to the Code Style justification.
 
 #### Best Practices Infractions
 
-For stage 3, I think you can add a small buffer to the leash distance to avoid this OR not changing the speed of the camera but only the position of the camera.
+- [For stage 3](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_three_camera.gd#L23) - I think you can add a small buffer to the leash distance to avoid this OR not changing the speed of the camera but only the position of the camera.
+
+- [For stage 5](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_five_camera.gd#L14) - your drawlogic is incorrectly due to forgot to put the ```super(delta)``` in the _process() function.
+- [You hard-coded the vessel normal speed](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_four_camera.gd#L20) - It is better to use the exported variable to set the vessel normal speed.
 
 #### Best Practices Exemplars
+- [clear boudary check](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_two_camera.gd#L32) - good job on checking the boundary of the vessel on stage 2.
