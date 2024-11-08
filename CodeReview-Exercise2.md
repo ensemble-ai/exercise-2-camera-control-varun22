@@ -174,7 +174,7 @@ This should be similar to the Code Style justification.
 
 - [For stage 3](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_three_camera.gd#L23) - I think you can add a small buffer to the leash distance to avoid this OR not changing the speed of the camera but only the position of the camera.
 
-- [For stage 5](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_five_camera.gd#L14) - your drawlogic is incorrectly due to forgot to put the ```super(delta)``` in the _process() function.
+- [For stage 5](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_five_camera.gd#L14) - your drawlogic is incorrectly (the drawed line cannot toggle to invible) due to forgot to put the ```super(delta)``` in the _process() function.
 - [You hard-coded the vessel normal speed](https://github.com/ensemble-ai/exercise-2-camera-control-varun22/blob/2cec8994f0a42ec857e4512aca10e1b9b65a4850/Obscura/scripts/camera_controllers/stage_four_camera.gd#L20) - It is better to use the exported variable to set the vessel normal speed.
 
 #### Best Practices Exemplars
